@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> about me</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+     <div class="wrapper">
+         <header class="container">
+           <span class="logo">whoamwhoam</span>
+           <nav>
+           <ul>
+             <li class="active"><a href="/">Home</a></li> 
+             <li><a href="about.html">About Me</a></li>
+             <li class="btn"><a href="contacts.html">Contacts</a></li>
+           </ul> 
+       </header>  
+       <div class="hero container">
+         <div class="hero--info">
+         <h1>Здравствуйте, я Маясова Екатерина</h1>
+         <p>Начинающий веб-разработчик.
+            Создаю современные и удобные сайты.</p>
+         <p>Я изучаю веб-разработку и создаю сайты с использованием HTML, CSS и JavaScript. Мне нравится разрабатывать интерфейсы и делать сайты удобными и красивыми.</p>
+       </div>
+       <img src="img/1.jpg" alt="" class="hero--photo">
+     </div>
+
+        <div class="container trending">
+        <a href="cnopka.html" class="see-all">See all</a>
+            <h3> Технологии, которые я изучаю</h3>
+           
+            <div class="cards">
+                <div class="block">
+                  <img src="/img/html.png" class="tech-icon">
+                  <img src="/img/znachok.png" class="icon"> 
+                  <span>HTML</span>
+                  </div>
+                  <div class="block">
+                  <img src="/img/css.png" class="tech-icon">
+                  <img src="/img/znachok.png" class="icon">
+                  <span>CSS</span>
+                  </div>
+                  <div class="block">
+                  <img src="/img/js.png" class="tech-icon">
+                  <img src="/img/znachok.png" class="icon">
+                  <span>JavaScript</span>
+                  
+                 </div>
+               
+            </div>
+       <div class="container banner">
+                <h3>О проекте</h3>
+                <p>Этот сайт был разработан в рамках школьного проекта. Его цель — изучить основы веб-разработки, структуру сайтов и принципы современного дизайна.</p>
+                <img src="/img/код.png" alt="">
+               </div>
+         <div class="container email">
+           <h3>whoamwhoam</h3>
+           <p>Если у вас есть вопросы, предложения или отзывы по проекту — заполните форму ниже. Я постараюсь ответить как можно быстрее.</p>
+           <div class="block">
+              <div>
+                <h4>Оставайтесь в курсе событий</h4>
+               <p>Подпишитесь на мою рассылку, чтобы быть в курсе последних новостей и обновлений. Я обещаю вам не рассылать спам! </p>
+             </div>
+            <div>
+               <input type="email" id="emailField" placeholder="Ваш email">
+               <button onclick="checkEmail()">Подписаться</button>
+            </div>
+           </div>
+         </div>
+</div>
+<footer>
+  <div class="blocks container">
+    <div>
+      <span class="logo">whoamwhoam</span>
+      <p>Учебный сайт-визитка. Разработка и дизайн выполнены самостоятельно.</p>
+    </div>
+    <div>
+      <h4> About Me</h4>
+      <ul>
+        <li>Portfolio</li>
+          <li>Career</li>
+          <li>Contact me</li>
+      </ul> 
+    </div>
+    <div>
+       <h4>Contact me</h4>
+       <p>📧 Email:proektpoinformatike10a@gmail.com</p>
+       <p>💬 Telegram:@whoamwhoam</p>
+       <p>📞Number:+373 (779) 532-48</p>
+    
+    </div>
+  </div>
+  <hr>
+  <p>Copyright © 2026 whoamwhoam. All rights reserved.</p>
+</footer>
+<script> function checkEmail() {
+   let email=document.querySelector('#emailField').value;
+   if(!email.includes('@')) alert('нет символа @');
+   else if( !email.includes('.')) alert('нет символа .');
+    else  alert('Спасибо за подписку!');
+    }
+    </script>
+</body>
+</html>
